@@ -1,5 +1,6 @@
 const repeatString = function(word, num) {
     let string = ''
+    if (num < 0) return 'ERROR' 
     for (let i = 0; i < num; i++) {
         // console.log(string += word);
        string += word
@@ -7,6 +8,5 @@ const repeatString = function(word, num) {
     return string
 };
 
-repeatString('hey', 9)
 // Do not edit below this line
 module.exports = repeatString;
